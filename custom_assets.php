@@ -41,8 +41,8 @@ class plgSystemCustom_assets extends JPlugin
 			$js_json 	= json_decode($js_assets, true);
 			$css_json 	= json_decode($css_assets, true);
 			
-			$js_filter 	= self::group_by_key($js_json);
-			$css_filter = self::group_by_key($css_json);
+			$js_filter  = $this->group_by_key($js_json);
+			$css_filter = $this->group_by_key($css_json);
 			
 			// Inject the JS
 			foreach ($js_filter as $index => $js)
