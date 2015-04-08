@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>JJ Custom Assets</name>
+	<author>JoomJunk</author>
+	<creationDate>08-Apr-2015</creationDate>
+	<copyright>Copyright (C) 2011 - 2015 JoomJunk</copyright> 
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license> 
+	<authorEmail>admin@joomjunk.co.uk</authorEmail> 
+	<authorUrl>http://www.joomjunk.co.uk</authorUrl> 
+	<version>1.0.0</version>
+	<description>JJ_CUSTOM_ASSETS_DESC</description>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_custom_assets.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_custom_assets.sys.ini</language>
+	</languages>
+	
+	<files>
+		<filename plugin="custom_assets">custom_assets.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+		<folder>language</folder>
+	</files>
+	
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/custom_assets/fields">
+			<fieldset name="Basic">
+				
+				<field type="info" />
+				
+				<field 
+					name="js_assets" 
+					type="Repeatable" 
+					icon="list" 
+					label="JFIELD_PLG_SYSTEM_CUSTOM_ASSETS_JS_FILES"
+					default="{
+						'js_file_url':['/media/jui/js/html5.js', 'http://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.js']
+					}"
+				>
+					<fields name="params">
+						<fieldset hidden="true" name="js_assets_modal" repeat="true">
+							<field name="js_file_url" label="JFIELD_PLG_SYSTEM_CUSTOM_ASSETS_FILE_URL" type="text" />
+						</fieldset>
+					</fields>
+				</field>
+				
+				<field 
+					name="css_assets" 
+					type="Repeatable" 
+					icon="list" 
+					label="JFIELD_PLG_SYSTEM_CUSTOM_ASSETS_CSS_FILES"
+					default="{
+						'css_file_url':['/media/jui/css/chosen.css', 'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.1/chosen.css']
+					}"
+				>
+					<fields name="params">
+						<fieldset hidden="true" name="css_assets_modal" repeat="true">
+							<field name="css_file_url" label="JFIELD_PLG_SYSTEM_CUSTOM_ASSETS_FILE_URL" type="text" />
+						</fieldset>
+					</fields>
+				</field>
+				
+	
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
