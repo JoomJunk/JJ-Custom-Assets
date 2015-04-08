@@ -22,6 +22,10 @@
 		<folder>language</folder>
 	</files>
 	
+	<updateservers>
+		<server type="extension" name="JJ Custom Assets" priority="1">http://www.joomjunk.co.uk/updates/custom_assets_update.xml</server>
+	</updateservers>
+	
 	<config>
 		<fields name="params" addfieldpath="/plugins/system/custom_assets/fields">
 			<fieldset name="Basic">
