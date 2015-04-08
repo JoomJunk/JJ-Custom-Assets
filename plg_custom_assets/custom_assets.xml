@@ -10,6 +10,8 @@
 	<version>1.0.0</version>
 	<description>JJ_CUSTOM_ASSETS_DESC</description>
 	
+	<scriptfile>script.php</scriptfile>
+	
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.plg_system_custom_assets.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_system_custom_assets.sys.ini</language>
