@@ -17,11 +17,7 @@ class JFormFieldInfo extends JFormField
 	 */
 	protected function getLabel()
 	{
-		$info = '<p>When importing local assets, ensure you use a forward slash (<code>/</code>) before the path. The paths should also be relative to the root of your Joomla installation.</p>';
-		$info .= '<p>See the example below:</p>';
-		$info .= '<p><pre>/media/jui/js/html5.js</pre></p>';
-		
-		return $info;
+		return JText::_('JJ_CUSTOM_ASSETS_INFO');
 	}
 	/**
 	 * @return mixed
