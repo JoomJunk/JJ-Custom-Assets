@@ -31,7 +31,7 @@ class plgSystemCustom_assets extends JPlugin
 		$doc = JFactory::getDocument();
 		
 		// Only load the assets in the frontend
-		if (!$app->isAdmin()) 
+		if ($app->isSite()) 
 		{
 			// Get json array of JS and CSS files
 			$js_assets 	= $this->params->get('js_assets');
